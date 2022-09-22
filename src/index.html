@@ -46,5 +46,16 @@
         </div>
       </div>
     </div>
+    <script>
+      const products = document.getElementsByClassName("product");
+      const prices = document.querySelectorAll(".price");
+      console.log(products)
+      for(let i = 0; i < products.length; i++){
+        products[i].setAttribute("data-price", prices[i].innerHTML)
+      }
+      
+    </script>
+
   </body>
 </html>
+
